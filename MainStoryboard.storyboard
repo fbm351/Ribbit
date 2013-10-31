@@ -56,10 +56,10 @@
             </objects>
             <point key="canvasLocation" x="-29" y="-541"/>
         </scene>
-        <!--View Controller - Ribbit-->
+        <!--Login View Controller - Ribbit-->
         <scene sceneID="RPP-US-dDm">
             <objects>
-                <viewController id="4mG-NC-bRM" sceneMemberID="viewController">
+                <viewController id="4mG-NC-bRM" customClass="FMLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BU8-RW-hzP"/>
                         <viewControllerLayoutGuide type="bottom" id="PaR-kV-l9G"/>
@@ -172,10 +172,10 @@
             </objects>
             <point key="canvasLocation" x="-29" y="651"/>
         </scene>
-        <!--View Controller - Ribbit-->
+        <!--Signup View Controller - Ribbit-->
         <scene sceneID="4pp-XA-GSS">
             <objects>
-                <viewController id="uVY-jr-6q2" sceneMemberID="viewController">
+                <viewController id="uVY-jr-6q2" customClass="FMSignupViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Y6t-GY-Ezj"/>
                         <viewControllerLayoutGuide type="bottom" id="vw4-ex-iBt"/>
@@ -203,6 +203,9 @@
                                 <state key="normal" title="Sing Up">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signup:" destination="uVY-jr-6q2" eventType="touchUpInside" id="97L-ZF-FE6"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email Address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AnN-LX-io0">
                                 <rect key="frame" x="20" y="151" width="280" height="30"/>
@@ -214,6 +217,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ribbit" id="iaS-VV-gEG"/>
+                    <connections>
+                        <outlet property="emailField" destination="AnN-LX-io0" id="Hz5-GQ-awk"/>
+                        <outlet property="passwordField" destination="WFI-it-FT6" id="Gp7-JQ-Val"/>
+                        <outlet property="usernameField" destination="FZy-rw-Qtj" id="XRc-Pr-kpD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xlJ-y1-ZmD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

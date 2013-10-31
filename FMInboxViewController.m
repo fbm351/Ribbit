@@ -7,6 +7,7 @@
 //
 
 #import "FMInboxViewController.h"
+#import <Parse/Parse.h>
 
 @interface FMInboxViewController ()
 
@@ -18,7 +19,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+   
     [self performSegueWithIdentifier:@"showLogin" sender:self];
 
 }
