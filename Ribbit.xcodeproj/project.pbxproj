@@ -19,6 +19,7 @@
 		D3424EF218229A6800C8E1EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424EDA18229A6800C8E1EF /* UIKit.framework */; };
 		D3424EFA18229A6800C8E1EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3424EF818229A6800C8E1EF /* InfoPlist.strings */; };
 		D3424EFC18229A6800C8E1EF /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424EFB18229A6800C8E1EF /* RibbitTests.m */; };
+		D3424F0618229A9600C8E1EF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0518229A9600C8E1EF /* MainStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		D3424EF718229A6800C8E1EF /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
 		D3424EF918229A6800C8E1EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3424EFB18229A6800C8E1EF /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
+		D3424F0518229A9600C8E1EF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		D3424ECA18229A6800C8E1EF = {
 			isa = PBXGroup;
 			children = (
+				D3424F0518229A9600C8E1EF /* MainStoryboard.storyboard */,
 				D3424EDC18229A6800C8E1EF /* Ribbit */,
 				D3424EF518229A6800C8E1EF /* RibbitTests */,
 				D3424ED518229A6800C8E1EF /* Frameworks */,
@@ -220,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3424F0618229A9600C8E1EF /* MainStoryboard.storyboard in Resources */,
 				D3424EE118229A6800C8E1EF /* InfoPlist.strings in Resources */,
 				D3424EE918229A6800C8E1EF /* Images.xcassets in Resources */,
 			);
