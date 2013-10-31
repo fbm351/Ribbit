@@ -20,6 +20,13 @@
 		D3424EFA18229A6800C8E1EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3424EF818229A6800C8E1EF /* InfoPlist.strings */; };
 		D3424EFC18229A6800C8E1EF /* RibbitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424EFB18229A6800C8E1EF /* RibbitTests.m */; };
 		D3424F0618229A9600C8E1EF /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0518229A9600C8E1EF /* MainStoryboard.storyboard */; };
+		D3424F0D18229E6800C8E1EF /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0718229E6800C8E1EF /* camera.png */; };
+		D3424F0E18229E6800C8E1EF /* camera@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0818229E6800C8E1EF /* camera@2x.png */; };
+		D3424F0F18229E6800C8E1EF /* friends.png in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0918229E6800C8E1EF /* friends.png */; };
+		D3424F1018229E6800C8E1EF /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0A18229E6800C8E1EF /* friends@2x.png */; };
+		D3424F1118229E6800C8E1EF /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0B18229E6800C8E1EF /* inbox.png */; };
+		D3424F1218229E6800C8E1EF /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D3424F0C18229E6800C8E1EF /* inbox@2x.png */; };
+		D3424F161822ADBB00C8E1EF /* FMInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424F151822ADBB00C8E1EF /* FMInboxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,14 @@
 		D3424EF918229A6800C8E1EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3424EFB18229A6800C8E1EF /* RibbitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RibbitTests.m; sourceTree = "<group>"; };
 		D3424F0518229A9600C8E1EF /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D3424F0718229E6800C8E1EF /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		D3424F0818229E6800C8E1EF /* camera@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera@2x.png"; sourceTree = "<group>"; };
+		D3424F0918229E6800C8E1EF /* friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = friends.png; sourceTree = "<group>"; };
+		D3424F0A18229E6800C8E1EF /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
+		D3424F0B18229E6800C8E1EF /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
+		D3424F0C18229E6800C8E1EF /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
+		D3424F141822ADBB00C8E1EF /* FMInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMInboxViewController.h; path = ../FMInboxViewController.h; sourceTree = "<group>"; };
+		D3424F151822ADBB00C8E1EF /* FMInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMInboxViewController.m; path = ../FMInboxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +94,7 @@
 		D3424ECA18229A6800C8E1EF = {
 			isa = PBXGroup;
 			children = (
+				D3424F1318229E7000C8E1EF /* Images */,
 				D3424F0518229A9600C8E1EF /* MainStoryboard.storyboard */,
 				D3424EDC18229A6800C8E1EF /* Ribbit */,
 				D3424EF518229A6800C8E1EF /* RibbitTests */,
@@ -110,6 +126,8 @@
 		D3424EDC18229A6800C8E1EF /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				D3424F141822ADBB00C8E1EF /* FMInboxViewController.h */,
+				D3424F151822ADBB00C8E1EF /* FMInboxViewController.m */,
 				D3424EE518229A6800C8E1EF /* FMAppDelegate.h */,
 				D3424EE618229A6800C8E1EF /* FMAppDelegate.m */,
 				D3424EE818229A6800C8E1EF /* Images.xcassets */,
@@ -145,6 +163,19 @@
 				D3424EF818229A6800C8E1EF /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D3424F1318229E7000C8E1EF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D3424F0718229E6800C8E1EF /* camera.png */,
+				D3424F0818229E6800C8E1EF /* camera@2x.png */,
+				D3424F0918229E6800C8E1EF /* friends.png */,
+				D3424F0A18229E6800C8E1EF /* friends@2x.png */,
+				D3424F0B18229E6800C8E1EF /* inbox.png */,
+				D3424F0C18229E6800C8E1EF /* inbox@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +255,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3424F0618229A9600C8E1EF /* MainStoryboard.storyboard in Resources */,
+				D3424F0F18229E6800C8E1EF /* friends.png in Resources */,
+				D3424F1018229E6800C8E1EF /* friends@2x.png in Resources */,
+				D3424F0E18229E6800C8E1EF /* camera@2x.png in Resources */,
+				D3424F1118229E6800C8E1EF /* inbox.png in Resources */,
 				D3424EE118229A6800C8E1EF /* InfoPlist.strings in Resources */,
+				D3424F0D18229E6800C8E1EF /* camera.png in Resources */,
 				D3424EE918229A6800C8E1EF /* Images.xcassets in Resources */,
+				D3424F1218229E6800C8E1EF /* inbox@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -245,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3424EE318229A6800C8E1EF /* main.m in Sources */,
+				D3424F161822ADBB00C8E1EF /* FMInboxViewController.m in Sources */,
 				D3424EE718229A6800C8E1EF /* FMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
