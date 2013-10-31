@@ -47,7 +47,13 @@
                             <outlet property="delegate" destination="QlH-rH-6qC" id="vNd-WX-a6i"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Ribbit" id="b91-PG-q52"/>
+                    <navigationItem key="navigationItem" title="Ribbit" id="b91-PG-q52">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="QSx-af-BlZ">
+                            <connections>
+                                <action selector="logout:" destination="QlH-rH-6qC" id="6uz-8L-TjH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="4mG-NC-bRM" kind="push" identifier="showLogin" id="gmy-5U-J7X"/>
                     </connections>
@@ -86,6 +92,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="4mG-NC-bRM" eventType="touchUpInside" id="n2h-eF-r4i"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iF1-v3-QU7">
                                 <rect key="frame" x="31" y="191" width="280" height="21"/>
@@ -109,6 +118,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ribbit" id="NIa-qU-RQA"/>
+                    <connections>
+                        <outlet property="passwordField" destination="gTn-nY-7I7" id="wNd-Yv-dWq"/>
+                        <outlet property="usernameField" destination="bso-Fo-NlH" id="HxS-Qd-cbI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ADx-jW-ppF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

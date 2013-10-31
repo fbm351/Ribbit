@@ -19,9 +19,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
-    [self performSegueWithIdentifier:@"showLogin" sender:self];
-
+    PFUser *currentUser = [PFUser currentUser];
+    if (currentUser) {
+        NSLog(@"Current User is %@", currentUser);
+    }
+    else {
+        [self performSegueWithIdentifier:@"showLogin" sender:self];
+    }
 }
 
 #pragma mark - Table view data source
@@ -50,4 +54,14 @@
     return cell;
 }
 
+- (IBAction)logout:(id)sender {
+    [PFUser logOut];
+    [self performSegueWithIdentifier:@"showLogin" sender:self];
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"showLogin"]) {
+        [segue.destinationViewController setHidesBottomBarWhenPushed:YES];
+    }
+}
 @end

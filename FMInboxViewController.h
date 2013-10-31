@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface FMInboxViewController : UITableViewController
+- (IBAction)logout:(id)sender;
 
 @end
