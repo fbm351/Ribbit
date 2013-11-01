@@ -39,6 +39,8 @@
 		D3424F2A1822CFF400C8E1EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424F211822CFF400C8E1EF /* SystemConfiguration.framework */; };
 		D3424F2D1822D22B00C8E1EF /* FMLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424F2C1822D22B00C8E1EF /* FMLoginViewController.m */; };
 		D3424F301822D24900C8E1EF /* FMSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424F2F1822D24900C8E1EF /* FMSignupViewController.m */; };
+		D3AE38261823D705006E8C67 /* FMEditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE38251823D705006E8C67 /* FMEditFriendsViewController.m */; };
+		D3AE38291824057B006E8C67 /* FMFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE38281824057B006E8C67 /* FMFriendsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,10 @@
 		D3424F2C1822D22B00C8E1EF /* FMLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMLoginViewController.m; path = ../FMLoginViewController.m; sourceTree = "<group>"; };
 		D3424F2E1822D24900C8E1EF /* FMSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMSignupViewController.h; path = ../FMSignupViewController.h; sourceTree = "<group>"; };
 		D3424F2F1822D24900C8E1EF /* FMSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMSignupViewController.m; path = ../FMSignupViewController.m; sourceTree = "<group>"; };
+		D3AE38241823D705006E8C67 /* FMEditFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMEditFriendsViewController.h; path = ../FMEditFriendsViewController.h; sourceTree = "<group>"; };
+		D3AE38251823D705006E8C67 /* FMEditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMEditFriendsViewController.m; path = ../FMEditFriendsViewController.m; sourceTree = "<group>"; };
+		D3AE38271824057B006E8C67 /* FMFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMFriendsViewController.h; path = ../FMFriendsViewController.h; sourceTree = "<group>"; };
+		D3AE38281824057B006E8C67 /* FMFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMFriendsViewController.m; path = ../FMFriendsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +178,10 @@
 		D3424EDC18229A6800C8E1EF /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				D3AE38271824057B006E8C67 /* FMFriendsViewController.h */,
+				D3AE38281824057B006E8C67 /* FMFriendsViewController.m */,
+				D3AE38241823D705006E8C67 /* FMEditFriendsViewController.h */,
+				D3AE38251823D705006E8C67 /* FMEditFriendsViewController.m */,
 				D3424F2E1822D24900C8E1EF /* FMSignupViewController.h */,
 				D3424F2F1822D24900C8E1EF /* FMSignupViewController.m */,
 				D3424F2B1822D22B00C8E1EF /* FMLoginViewController.h */,
@@ -334,7 +344,9 @@
 				D3424EE318229A6800C8E1EF /* main.m in Sources */,
 				D3424F2D1822D22B00C8E1EF /* FMLoginViewController.m in Sources */,
 				D3424F161822ADBB00C8E1EF /* FMInboxViewController.m in Sources */,
+				D3AE38261823D705006E8C67 /* FMEditFriendsViewController.m in Sources */,
 				D3424F301822D24900C8E1EF /* FMSignupViewController.m in Sources */,
+				D3AE38291824057B006E8C67 /* FMFriendsViewController.m in Sources */,
 				D3424EE718229A6800C8E1EF /* FMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -544,6 +556,7 @@
 				D3424F0118229A6800C8E1EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D3424F0218229A6800C8E1EF /* Build configuration list for PBXNativeTarget "RibbitTests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +565,7 @@
 				D3424F0418229A6800C8E1EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
