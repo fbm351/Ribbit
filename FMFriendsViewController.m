@@ -7,6 +7,7 @@
 //
 
 #import "FMFriendsViewController.h"
+#import "FMEditFriendsViewController.h"
 
 @interface FMFriendsViewController ()
 
@@ -30,6 +31,14 @@
         }
     }];
 
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqualToString:@"showEditFriends"]) {
+        FMEditFriendsViewController *viewController = (FMEditFriendsViewController *)segue.destinationViewController;
+        viewController.friends = [NSMutableArray arrayWithArray:self.friends];
+    }
 }
 
 
