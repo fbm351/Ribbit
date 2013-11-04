@@ -17,8 +17,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    self.currentUser = [PFUser currentUser];
 
     PFQuery *query = [PFUser query];
+    [query whereKey:@"username" notEqualTo:self.currentUser.username];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (error) {
@@ -30,7 +33,7 @@
         }
     }];
     
-    self.currentUser = [PFUser currentUser];
+    
 }
 
 #pragma mark - Table view data source
@@ -74,11 +77,29 @@
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    cell.accessoryType = UITableViewCellAccessoryCheckmark;
     
+    PFUser *user = [self.allUsers objectAtIndex:indexPath.row];
     PFRelation *friendsRelation = [self.currentUser relationforKey:@"friendsRelation"];
-    PFUser *user =  [self.allUsers objectAtIndex:indexPath.row];
-    [friendsRelation addObject:user];
+
+    if ([self isFriend:user]) {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+        
+        for (PFUser *friend in self.friends)
+        {
+            if ([friend.objectId isEqualToString:user.objectId]) {
+                [self.friends removeObject:friend];
+                break;
+            }
+        }
+        
+        [friendsRelation removeObject:user];
+    }
+    else {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+        [self.friends addObject:user];
+        [friendsRelation addObject:user];
+        
+    }
     
     [self.currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (error) {
