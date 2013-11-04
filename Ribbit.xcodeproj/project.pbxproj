@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D32087EC1827F099009FFBBD /* FMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32087EB1827F099009FFBBD /* FMCameraViewController.m */; };
 		D3424ED718229A6800C8E1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED618229A6800C8E1EF /* Foundation.framework */; };
 		D3424ED918229A6800C8E1EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED818229A6800C8E1EF /* CoreGraphics.framework */; };
 		D3424EDB18229A6800C8E1EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424EDA18229A6800C8E1EF /* UIKit.framework */; };
@@ -54,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D32087EA1827F099009FFBBD /* FMCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCameraViewController.h; sourceTree = "<group>"; };
+		D32087EB1827F099009FFBBD /* FMCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCameraViewController.m; sourceTree = "<group>"; };
 		D3424ED318229A6800C8E1EF /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3424ED618229A6800C8E1EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3424ED818229A6800C8E1EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -190,6 +193,8 @@
 				D3424F151822ADBB00C8E1EF /* FMInboxViewController.m */,
 				D3424EE518229A6800C8E1EF /* FMAppDelegate.h */,
 				D3424EE618229A6800C8E1EF /* FMAppDelegate.m */,
+				D32087EA1827F099009FFBBD /* FMCameraViewController.h */,
+				D32087EB1827F099009FFBBD /* FMCameraViewController.m */,
 				D3424EE818229A6800C8E1EF /* Images.xcassets */,
 				D3424EDD18229A6800C8E1EF /* Supporting Files */,
 			);
@@ -347,6 +352,7 @@
 				D3AE38261823D705006E8C67 /* FMEditFriendsViewController.m in Sources */,
 				D3424F301822D24900C8E1EF /* FMSignupViewController.m in Sources */,
 				D3AE38291824057B006E8C67 /* FMFriendsViewController.m in Sources */,
+				D32087EC1827F099009FFBBD /* FMCameraViewController.m in Sources */,
 				D3424EE718229A6800C8E1EF /* FMAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

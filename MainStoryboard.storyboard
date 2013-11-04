@@ -191,10 +191,10 @@
             </objects>
             <point key="canvasLocation" x="430" y="54"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Camera View Controller - Recipients-->
         <scene sceneID="eGv-DN-Crq">
             <objects>
-                <tableViewController id="yRz-XU-bfX" sceneMemberID="viewController">
+                <tableViewController id="yRz-XU-bfX" customClass="FMCameraViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C7l-Vs-Z8G">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,7 +214,7 @@
                             <outlet property="delegate" destination="yRz-XU-bfX" id="mSB-HG-DQ4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="NVH-FT-VnL"/>
+                    <navigationItem key="navigationItem" title="Recipients" id="NVH-FT-VnL"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oho-Ed-rja" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
