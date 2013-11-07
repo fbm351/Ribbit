@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30875C1182A9CD200F7432C /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = D30875BD182A9CD200F7432C /* icon_image.png */; };
+		D30875C2182A9CD200F7432C /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D30875BE182A9CD200F7432C /* icon_image@2x.png */; };
+		D30875C3182A9CD200F7432C /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = D30875BF182A9CD200F7432C /* icon_video.png */; };
+		D30875C4182A9CD200F7432C /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D30875C0182A9CD200F7432C /* icon_video@2x.png */; };
+		D30875C7182AA28A00F7432C /* FMImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30875C6182AA28A00F7432C /* FMImageViewController.m */; };
 		D32087EC1827F099009FFBBD /* FMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32087EB1827F099009FFBBD /* FMCameraViewController.m */; };
 		D3424ED718229A6800C8E1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED618229A6800C8E1EF /* Foundation.framework */; };
 		D3424ED918229A6800C8E1EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED818229A6800C8E1EF /* CoreGraphics.framework */; };
@@ -42,6 +47,7 @@
 		D37DCD9018244BBA00F24E2B /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D37DCD8F18244BBA00F24E2B /* Parse.framework */; };
 		D3AE38261823D705006E8C67 /* FMEditFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE38251823D705006E8C67 /* FMEditFriendsViewController.m */; };
 		D3AE38291824057B006E8C67 /* FMFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AE38281824057B006E8C67 /* FMFriendsViewController.m */; };
+		D3F3138E182C208200D55229 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3F3138D182C208200D55229 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +61,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30875BD182A9CD200F7432C /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		D30875BE182A9CD200F7432C /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		D30875BF182A9CD200F7432C /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		D30875C0182A9CD200F7432C /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		D30875C5182AA28A00F7432C /* FMImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMImageViewController.h; path = ../FMImageViewController.h; sourceTree = "<group>"; };
+		D30875C6182AA28A00F7432C /* FMImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMImageViewController.m; path = ../FMImageViewController.m; sourceTree = "<group>"; };
 		D32087EA1827F099009FFBBD /* FMCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCameraViewController.h; sourceTree = "<group>"; };
 		D32087EB1827F099009FFBBD /* FMCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCameraViewController.m; sourceTree = "<group>"; };
 		D3424ED318229A6800C8E1EF /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +112,7 @@
 		D3AE38251823D705006E8C67 /* FMEditFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMEditFriendsViewController.m; path = ../FMEditFriendsViewController.m; sourceTree = "<group>"; };
 		D3AE38271824057B006E8C67 /* FMFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMFriendsViewController.h; path = ../FMFriendsViewController.h; sourceTree = "<group>"; };
 		D3AE38281824057B006E8C67 /* FMFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMFriendsViewController.m; path = ../FMFriendsViewController.m; sourceTree = "<group>"; };
+		D3F3138D182C208200D55229 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F3138E182C208200D55229 /* MediaPlayer.framework in Frameworks */,
 				D3424F221822CFF400C8E1EF /* AudioToolbox.framework in Frameworks */,
 				D3424F231822CFF400C8E1EF /* CFNetwork.framework in Frameworks */,
 				D3424F241822CFF400C8E1EF /* CoreLocation.framework in Frameworks */,
@@ -160,6 +174,7 @@
 		D3424ED518229A6800C8E1EF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D3F3138D182C208200D55229 /* MediaPlayer.framework */,
 				D37DCD8F18244BBA00F24E2B /* Parse.framework */,
 				D3424F191822CFF300C8E1EF /* AudioToolbox.framework */,
 				D3424F1A1822CFF400C8E1EF /* CFNetwork.framework */,
@@ -181,6 +196,8 @@
 		D3424EDC18229A6800C8E1EF /* Ribbit */ = {
 			isa = PBXGroup;
 			children = (
+				D30875C5182AA28A00F7432C /* FMImageViewController.h */,
+				D30875C6182AA28A00F7432C /* FMImageViewController.m */,
 				D3AE38271824057B006E8C67 /* FMFriendsViewController.h */,
 				D3AE38281824057B006E8C67 /* FMFriendsViewController.m */,
 				D3AE38241823D705006E8C67 /* FMEditFriendsViewController.h */,
@@ -233,6 +250,10 @@
 		D3424F1318229E7000C8E1EF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D30875BD182A9CD200F7432C /* icon_image.png */,
+				D30875BE182A9CD200F7432C /* icon_image@2x.png */,
+				D30875BF182A9CD200F7432C /* icon_video.png */,
+				D30875C0182A9CD200F7432C /* icon_video@2x.png */,
 				D3424F0718229E6800C8E1EF /* camera.png */,
 				D3424F0818229E6800C8E1EF /* camera@2x.png */,
 				D3424F0918229E6800C8E1EF /* friends.png */,
@@ -319,15 +340,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30875C3182A9CD200F7432C /* icon_video.png in Resources */,
 				D3424F0618229A9600C8E1EF /* MainStoryboard.storyboard in Resources */,
 				D3424F0F18229E6800C8E1EF /* friends.png in Resources */,
+				D30875C1182A9CD200F7432C /* icon_image.png in Resources */,
 				D3424F1018229E6800C8E1EF /* friends@2x.png in Resources */,
 				D3424F0E18229E6800C8E1EF /* camera@2x.png in Resources */,
 				D3424F1118229E6800C8E1EF /* inbox.png in Resources */,
 				D3424EE118229A6800C8E1EF /* InfoPlist.strings in Resources */,
+				D30875C2182A9CD200F7432C /* icon_image@2x.png in Resources */,
 				D3424F0D18229E6800C8E1EF /* camera.png in Resources */,
 				D3424EE918229A6800C8E1EF /* Images.xcassets in Resources */,
 				D3424F1218229E6800C8E1EF /* inbox@2x.png in Resources */,
+				D30875C4182A9CD200F7432C /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +375,7 @@
 				D3424F2D1822D22B00C8E1EF /* FMLoginViewController.m in Sources */,
 				D3424F161822ADBB00C8E1EF /* FMInboxViewController.m in Sources */,
 				D3AE38261823D705006E8C67 /* FMEditFriendsViewController.m in Sources */,
+				D30875C7182AA28A00F7432C /* FMImageViewController.m in Sources */,
 				D3424F301822D24900C8E1EF /* FMSignupViewController.m in Sources */,
 				D3AE38291824057B006E8C67 /* FMFriendsViewController.m in Sources */,
 				D32087EC1827F099009FFBBD /* FMCameraViewController.m in Sources */,
