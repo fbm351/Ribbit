@@ -19,7 +19,6 @@
 		D3424EE118229A6800C8E1EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3424EDF18229A6800C8E1EF /* InfoPlist.strings */; };
 		D3424EE318229A6800C8E1EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424EE218229A6800C8E1EF /* main.m */; };
 		D3424EE718229A6800C8E1EF /* FMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3424EE618229A6800C8E1EF /* FMAppDelegate.m */; };
-		D3424EE918229A6800C8E1EF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3424EE818229A6800C8E1EF /* Images.xcassets */; };
 		D3424EF018229A6800C8E1EF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424EEF18229A6800C8E1EF /* XCTest.framework */; };
 		D3424EF118229A6800C8E1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED618229A6800C8E1EF /* Foundation.framework */; };
 		D3424EF218229A6800C8E1EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424EDA18229A6800C8E1EF /* UIKit.framework */; };
@@ -79,7 +78,6 @@
 		D3424EE418229A6800C8E1EF /* Ribbit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Ribbit-Prefix.pch"; sourceTree = "<group>"; };
 		D3424EE518229A6800C8E1EF /* FMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMAppDelegate.h; sourceTree = "<group>"; };
 		D3424EE618229A6800C8E1EF /* FMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMAppDelegate.m; sourceTree = "<group>"; };
-		D3424EE818229A6800C8E1EF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D3424EEE18229A6800C8E1EF /* RibbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RibbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3424EEF18229A6800C8E1EF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D3424EF718229A6800C8E1EF /* RibbitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RibbitTests-Info.plist"; sourceTree = "<group>"; };
@@ -212,7 +210,6 @@
 				D3424EE618229A6800C8E1EF /* FMAppDelegate.m */,
 				D32087EA1827F099009FFBBD /* FMCameraViewController.h */,
 				D32087EB1827F099009FFBBD /* FMCameraViewController.m */,
-				D3424EE818229A6800C8E1EF /* Images.xcassets */,
 				D3424EDD18229A6800C8E1EF /* Supporting Files */,
 			);
 			path = Ribbit;
@@ -350,7 +347,6 @@
 				D3424EE118229A6800C8E1EF /* InfoPlist.strings in Resources */,
 				D30875C2182A9CD200F7432C /* icon_image@2x.png in Resources */,
 				D3424F0D18229E6800C8E1EF /* camera.png in Resources */,
-				D3424EE918229A6800C8E1EF /* Images.xcassets in Resources */,
 				D3424F1218229E6800C8E1EF /* inbox@2x.png in Resources */,
 				D30875C4182A9CD200F7432C /* icon_video@2x.png in Resources */,
 			);
