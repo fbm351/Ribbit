@@ -16,6 +16,8 @@
     [Parse setApplicationId:@"SnTE5XcOfHl0SWItHjmpF14T8IdWbfVgnsFYsINx"
                   clientKey:@"W04oFCpcbiS6hWfp9KFquqYd1vDVTXxxdgPfDL5P"];
     return YES;
+    
+    [NSThread sleepForTimeInterval:1.5];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
