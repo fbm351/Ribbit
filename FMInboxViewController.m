@@ -8,6 +8,7 @@
 
 #import "FMInboxViewController.h"
 #import "FMImageViewController.h"
+#import "MSCellAccessory.h"
 
 @interface FMInboxViewController ()
 
@@ -33,6 +34,9 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
+    [self.navigationController.navigationBar setHidden:NO];
+
     
     PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
     [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
@@ -72,6 +76,9 @@
     
     PFObject *message = [self.messages objectAtIndex:indexPath.row];
     cell.textLabel.text = [message objectForKey:@"senderName"];
+    
+    UIColor *disclosureColor = [UIColor colorWithRed:0.553 green:0.439 blue:0.718 alpha:1.0];
+    cell.accessoryView = [MSCellAccessory accessoryWithType:FLAT_DISCLOSURE_INDICATOR color:disclosureColor];
     
     NSString *fileType = [message objectForKey:@"fileType"];
     

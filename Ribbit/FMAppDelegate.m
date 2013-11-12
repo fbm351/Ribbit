@@ -13,11 +13,16 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    [NSThread sleepForTimeInterval:1.5];
+
+    
     [Parse setApplicationId:@"SnTE5XcOfHl0SWItHjmpF14T8IdWbfVgnsFYsINx"
                   clientKey:@"W04oFCpcbiS6hWfp9KFquqYd1vDVTXxxdgPfDL5P"];
+    
+    [self customizeUserInterface];
+    
     return YES;
     
-    [NSThread sleepForTimeInterval:1.5];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -45,6 +50,32 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mard - Helper methods
+
+- (void)customizeUserInterface {
+    // Customize Nav Bar
+    // [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.553 green:0.435 blue:0.718 alpha:1.0]];
+    [[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@"navBarBackground"] forBarMetrics:UIBarMetricsDefault];
+    [[UINavigationBar appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor, nil]];
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
+    // Customize Tab Bar
+    [[UITabBarItem appearance] setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor], UITextAttributeTextColor, nil] forState:UIControlStateNormal];
+    
+    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
+    
+    UITabBar *tabBar = tabBarController.tabBar;
+    
+    UITabBarItem *tabInbox = [tabBar.items objectAtIndex:0];
+    UITabBarItem *tabFriends = [tabBar.items objectAtIndex:1];
+    UITabBarItem *tabCamera = [tabBar.items objectAtIndex:2];
+    
+    [tabInbox setFinishedSelectedImage:[UIImage imageNamed:@"indox"] withFinishedUnselectedImage:[UIImage imageNamed:@"inbox"]];
+    [tabFriends setFinishedSelectedImage:[UIImage imageNamed:@"friends"] withFinishedUnselectedImage:[UIImage imageNamed:@"friends"]];
+    [tabCamera setFinishedSelectedImage:[UIImage imageNamed:@"camera"] withFinishedUnselectedImage:[UIImage imageNamed:@"camera"]];
+    
 }
 
 @end

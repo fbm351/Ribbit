@@ -19,7 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    if ([UIScreen mainScreen].bounds.size.height == 568) {
+        self.backgroundImageView.image = [UIImage imageNamed:@"loginBackground-568h"];
+    }
+
 }
+
+
 
 - (IBAction)signup:(id)sender {
     NSString *username = [self.usernameField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
@@ -47,4 +53,11 @@
         }];
     }
 }
+
+- (IBAction)dismiss:(id)sender {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+
+
 @end
