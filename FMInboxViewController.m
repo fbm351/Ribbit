@@ -30,27 +30,19 @@
     else {
         [self performSegueWithIdentifier:@"showLogin" sender:self];
     }
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self action:@selector(retrieveMessages) forControlEvents:UIControlEventValueChanged];
+    
 }
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     [self.navigationController.navigationBar setHidden:NO];
-
     
-    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
-    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
-    [query orderByDescending:@"createdAt"];
-    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@ %@", error, [error userInfo]);
-        }
-        else {
-            self.messages = objects;
-            [self.tableView reloadData];
-            NSLog(@"Message retrieved %d", [self.messages count]);
-        }
-    }];
+    [self retrieveMessages];
 }
 
 #pragma mark - Table view data source
@@ -140,5 +132,26 @@
         imageViewController.message = self.selectedMessage;
 
     }
+}
+
+#pragma mark - Helper methods
+
+- (void)retrieveMessages {
+    PFQuery *query = [PFQuery queryWithClassName:@"Messages"];
+    [query whereKey:@"recipientIds" equalTo:[[PFUser currentUser] objectId]];
+    [query orderByDescending:@"createdAt"];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
+        }
+        else {
+            self.messages = objects;
+            [self.tableView reloadData];
+            NSLog(@"Message retrieved %d", [self.messages count]);
+        }
+        if ([self.refreshControl isRefreshing]) {
+            [self.refreshControl endRefreshing];
+        }
+    }];
 }
 @end

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D30875C7182AA28A00F7432C /* FMImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D30875C6182AA28A00F7432C /* FMImageViewController.m */; };
 		D32087EC1827F099009FFBBD /* FMCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D32087EB1827F099009FFBBD /* FMCameraViewController.m */; };
+		D334DB2118327D100088090D /* GravatarUrlBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = D334DB2018327D100088090D /* GravatarUrlBuilder.m */; };
 		D3424ED718229A6800C8E1EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED618229A6800C8E1EF /* Foundation.framework */; };
 		D3424ED918229A6800C8E1EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424ED818229A6800C8E1EF /* CoreGraphics.framework */; };
 		D3424EDB18229A6800C8E1EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3424EDA18229A6800C8E1EF /* UIKit.framework */; };
@@ -59,6 +60,8 @@
 		D30875C6182AA28A00F7432C /* FMImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMImageViewController.m; path = ../FMImageViewController.m; sourceTree = "<group>"; };
 		D32087EA1827F099009FFBBD /* FMCameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCameraViewController.h; sourceTree = "<group>"; };
 		D32087EB1827F099009FFBBD /* FMCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMCameraViewController.m; sourceTree = "<group>"; };
+		D334DB1F18327D100088090D /* GravatarUrlBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GravatarUrlBuilder.h; sourceTree = "<group>"; };
+		D334DB2018327D100088090D /* GravatarUrlBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GravatarUrlBuilder.m; sourceTree = "<group>"; };
 		D3424ED318229A6800C8E1EF /* Ribbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ribbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3424ED618229A6800C8E1EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D3424ED818229A6800C8E1EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -208,6 +211,8 @@
 				D3CB9CF3182D30D3005D41FE /* TPKeyboardAvoidingScrollView.m */,
 				D3CB9CF5182D31E8005D41FE /* UIScrollView+TPKeyboardAvoidingAdditions.h */,
 				D3CB9CF6182D31E8005D41FE /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
+				D334DB1F18327D100088090D /* GravatarUrlBuilder.h */,
+				D334DB2018327D100088090D /* GravatarUrlBuilder.m */,
 				D3CB9CF8182D6824005D41FE /* MSCellAccessory */,
 				D3534F40182C4322001627F5 /* Images.xcassets */,
 				D3424EDD18229A6800C8E1EF /* Supporting Files */,
@@ -360,6 +365,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3424EE318229A6800C8E1EF /* main.m in Sources */,
+				D334DB2118327D100088090D /* GravatarUrlBuilder.m in Sources */,
 				D3CB9CF4182D30D3005D41FE /* TPKeyboardAvoidingScrollView.m in Sources */,
 				D3CB9CFE182D6824005D41FE /* UIView+AccessViewController.m in Sources */,
 				D3424F2D1822D22B00C8E1EF /* FMLoginViewController.m in Sources */,
